@@ -1,0 +1,8 @@
+body{background-color:#D3D3D3;}
+.container{padding: 0px 0px 0px 0px;}
+.cabecalho{background-color: #1E90FF; height: 100px; padding-top: 30px;}
+.text-header{color:white; text-align:center; text-shadow: 5px 5px 5px 3px gray; font-weight:bold; size: 30px;}
+.img-h{ border: 1px solid gray; float:left; height: 120px; width: 30%; margin: 1px 0px 0px 0px; padding-left: 5px;}
+.img-h img{ width: 95%; height: 95%;}
+.info{ border: 1px solid gray; float:left; height: 120px; width: 70%; margin:1px 0px 0px 0px; padding-left: 5px;}
+.fa-star{color:yellow;}

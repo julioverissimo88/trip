@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>myTrips</title>
+		<!--CSS!-->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">		
+	</head>
+	<body>
+		<div class="container cabecalho">
+		  <p class="text-header">myTrips</p>
+		</div>
+		<div id="app" >
+			<div class="container" v-for="item in info">
+			  <div class="img-h">
+				<img class="img-responsive" v-bind:src="item.img" />
+			  </div>
+			  <div class="info">
+				<p>{{ item.name }}</p>
+				<p>
+					<span style="display:none">{{ numstar = item.stars }}</span>
+					<span v-for="star in numstar">				
+						<i class="fas fa-star"></i>
+					</span>
+				</p>
+				<p>{{ item.price }}</p>
+			  </div>
+			</div>		
+		</div>
+		<!--Scripts!-->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/vue/dist/vue.js" ></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" ></script>
+		<script src="index.js" ></script>	
+	</body>
+</html>
